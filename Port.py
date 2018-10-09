@@ -7,13 +7,12 @@ from cozmo.util import degrees, distance_mm, speed_mmps
 
 
 def main():
-    Y = 0
     """Just print out some event infomation when the gamepad is used."""
     while 1:
         events = get_gamepad()
         for event in events:
-            print(event.code, event.state
-
+            print(event.code,event.state)
+            if event.code==
 
 if __name__ == "__main__":
     main()
