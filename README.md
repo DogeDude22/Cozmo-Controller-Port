@@ -1,7 +1,7 @@
 # Cozmo-Controller-Port
 Use this port to control cozmo with a controller!
 
-# How to Install
+# How to Install Inputs
 
 Install through pypi:
 pip install inputs
