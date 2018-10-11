@@ -24,10 +24,6 @@ def main(robot: cozmo.robot.Robot):
             
 
 
-
-
- 
-
 cozmo.run_program(main)
 
 if __name__ == "__main__": 
