@@ -1,24 +1,19 @@
+
 from __future__ import print_function
 from inputs import get_gamepad
-
 import cozmo
-from cozmo.util import degrees, distance_mm, speed_mmps
 
 
+def main(robot: cozmo.robot.Robot):
+ while 1: 
+    events = get_gamepad() 
+    for event in events: 
+        print(event.code,event.state) 
+        if event.code == "ABS_RZ":
+               robot.say_text("I am moving").wait_for_completed()
+ 
 
-def main():
-    """Just print out some event infomation when the gamepad is used."""
-    while 1:
-        events = get_gamepad()
-        for event in events:
-            print(event.code,event.state)
-            if event.code==
+cozmo.run_program(main)
 
-if __name__ == "__main__":
-    main()
-
-
-def cozmo_program(robot: cozmo.robot.Robot):
-    robot.drive_straight(distance_mm(150), speed_mmps(50)).wait_for_completed()
-    
-cozmo.run_program(cozmo_program)
+if __name__ == "__main__": 
+      main() 
