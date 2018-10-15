@@ -1,5 +1,3 @@
-"""Simple example showing how to get gamepad events."""
-
 from __future__ import print_function
 from inputs import get_gamepad
 import cozmo
