@@ -1,3 +1,5 @@
+#Thanks to zeth for this code!
+
 from __future__ import print_function
 
 from inputs import devices
