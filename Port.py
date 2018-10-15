@@ -19,10 +19,6 @@ def main(robot: cozmo.robot.Robot):
                 robot.move_lift(5)
             if event.code == "ABS_HAT0Y" and event.state == 1:
                 robot.move_lift(-5)
-            if event.code == "ABS_RY" and event.state > 0:
-                robot.move_head(5)
-            if event.code == "ABS_RY" and event.state < 0:
-                robot.move_head(-5)
                 
  
 
@@ -31,16 +27,3 @@ cozmo.run_program(main, use_viewer=True, force_viewer_on_top=True)
 
 if __name__ == "__main__": 
       main() 
-
-
- 
-  
-
-
-
-
-
-
-
-
-
