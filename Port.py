@@ -5,7 +5,6 @@ from cozmo.util import degrees, distance_mm, speed_mmps
 
 
 def main(robot: cozmo.robot.Robot):
-global RUP   
     while 1: 
         events = get_gamepad() 
         for event in events:  
